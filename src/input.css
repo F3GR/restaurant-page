@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Freehand";
+    src: url(./src/originals/Freehand-Regular.ttf);
+}
