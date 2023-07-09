@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
@@ -14,15 +18,12 @@
     hyphens: auto;
 }
 
-
-
 html {
     font-size: 62.5%; /* equals 10px */
 }
 
 body {
     width: 100%; /* might be changed if necessary */
-    min-height: 80%; /* might be changed if necessary */
     padding: 0; /* might be changed if necessary */
     font-size: 1.6rem;
     line-height: 1.75;
@@ -37,7 +38,6 @@ footer, header, hgroup, menu, nav, section {
 }
 
 button, textarea, select, input, li {
-    width: 150px;
     font: inherit;
     font-size: 1.6rem;
 }
@@ -71,30 +71,12 @@ ol {
     list-style: decimal;
 }
 
-h1, h2, h3, h4, h5, h6, nav, ul, ol, table, form {
-    margin-top: 4rem;
-}
-
-p {
-    margin: 2rem 0;
-}
-
-article, p {
-    max-width: 50rem;
-}
-
 td, th {
     border: 1px solid black;
 }
 
 blockquote, q {
 	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
 }
 
 *::not(img),
@@ -111,121 +93,6 @@ input {
   background-color: #fff;
   margin: 0;
   padding: 0;
-}
-
- /* do I need this? - CHECK //
-input[type="checkbox"] {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-} */
-
--webkit-search-cancel-button {
-  display: none;
-}
-
-input[type="checkbox"] {
-  position: relative;
-  width: 1em;
-  height: 1em;
-  border: 1px solid gray;
-  vertical-align: -2px;
-  color: green;
-}
-
-input[type="checkbox"]::before {
-  content: "✔";
-  position: absolute;
-  font-size: 1.2em;
-  right: -1px;
-  top: -0.3em;
-  visibility: hidden;
-}
-
-input[type="checkbox"]:checked::before {
-  visibility: visible;
-}
-
-input[type="checkbox"]:disabled {
-  border-color: black;
-  background: #ddd;
-  color: gray;
-}
-
-button,
-label,
-input,
-select,
-progress,
-meter {
-  display: block;
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 5px;
-  height: 30px;
-}
-
-select {
-  appearance: none;
-}
-
-input[type="text"],
-input[type="datetime-local"],
-input[type="color"],
-select {
-  box-shadow: inset 1px 1px 3px #ccc;
-  border-radius: 5px;
-}
-
- /* Browser compatibility fix //
-<label for="select">Select a fruit</label>
-<div class="select-wrapper">
-  <select id="select" name="select">
-    <option>Banana</option>
-    <option>Cherry</option>
-    <option>Lemon</option>
-  </select>
-</div> */
-.select-wrapper {
-  position: relative;
-}
-.select-wrapper::after {
-  content: "▼";
-  font-size: 1rem;
-  top: 6px;
-  right: 10px;
-  position: absolute;
-}
-
-/* !!!Browser compatibility with multiple selections!!! //
-<label for="select">Select fruits</label>
-<select id="select" name="select" multiple>
-  …
-</select> */
-
-
-input[type="range"] {
-  appearance: none;
-  background: red;
-  height: 2px;
-  padding: 0;
-  outline: 1px solid transparent;
-}
-
-input[type="color"] {
-  border: 0;
-  padding: 0;
-}
-
-input[type="file"] {
-  height: 0;
-  padding: 0;
-  opacity: 0;
 }
 
 

@@ -1,8 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+      color: whitesmoke;
+      text-shadow: 2px 4px 4px rgba(108, 108, 108, 0.861);
+      font-weight: 700;
+}
 
 @font-face {
     font-family: "Freehand";
-    src: url(./src/originals/Freehand-Regular.ttf);
+    src: url(../src/originals/Freehand-Regular.ttf);
 }
