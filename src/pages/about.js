@@ -39,5 +39,5 @@ export function renderAboutPage() {
     const paraTwo = createElementWithAttributes('p', { class: 'two' }, selectedMain);
     paraTwo.textContent = paraTwoText;
 
-    createElementWithAttributes('img', { class: 'restaurant-photo', src: '../originals/pah-zaz.jpeg', alt: `Restaurant's photo` }, selectedMain);
+    createElementWithAttributes('img', { class: 'restaurant-photo', src: '../src/originals/pah-zaz.jpeg', alt: `Restaurant's photo` }, selectedMain);
 }
