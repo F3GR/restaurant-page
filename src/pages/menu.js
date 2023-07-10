@@ -5,28 +5,28 @@ export function renderMenuPage() {
     const pizzaMenu = [
         {
             name: 'Neapolitan Pizza',
-            imageURL: '../src/originals/Neapolitan-pizza.jpeg',
+            imageURL: '../originals/Neapolitan-pizza.jpeg',
             description: 'Enjoy the authentic flavors of Naples with our Neapolitan Pizza. Made with the finest ingredients, including fresh mozzarella, San Marzano tomatoes, and fragrant basil, this classic pizza is cooked in a wood-fired oven for that perfect charred crust.',
             pricePara: 'From',
             price: '$12.99',
         },
         {
             name: 'Pizza Fritta',
-            imageURL: '../src/originals/Pizza-Fritta.jpeg',
+            imageURL: '../originals/Pizza-Fritta.jpeg',
             description: 'Experience the thin and crispy perfection of our Pizza Tonda Romana. This round Roman-style pizza is known for its delicate crust and generous toppings. Choose from an array of traditional or gourmet toppings, such as mushrooms, Italian sausage, and truffle oil.',
             pricePara: 'From just',
             price: '$10.99',
         },
         {
             name: 'Pizza alla Pala',
-            imageURL: '../src/originals/Pizza-alla-Pala.jpeg',
+            imageURL: '../originals/Pizza-alla-Pala.jpeg',
             description: `Treat yourself to the unique and delicious Pizza alla Pala. This Roman-style pizza features a rectangular shape with a thick, airy crust. Topped with a variety of flavorful ingredients like prosciutto, arugula, and cherry tomatoes, it's a delight for your taste buds.`,
             pricePara: `From`,
             price: '$13.99',
         },
         {
             name: 'Pizza Tonda Romana',
-            imageURL: '../src/originals/Pizza-Tonda-Romana.jpeg',
+            imageURL: '../originals/Pizza-Tonda-Romana.jpeg',
             description: 'Experience the thin and crispy perfection of our Pizza Tonda Romana. This round Roman-style pizza is known for its delicate crust and generous toppings. Choose from an array of traditional or gourmet toppings, such as mushrooms, Italian sausage, and truffle oil',
             pricePara: 'From',
             price: '$13.99',
