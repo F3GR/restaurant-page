@@ -551,6 +551,7 @@ video {
   font-weight: 700;
   font-family: "Freehand", sans-serif;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  border-collapse: collapse;
 }
 
 @font-face {
@@ -558,17 +559,16 @@ font-family: "Freehand";
 src: url(../src/originals/Freehand-Regular.ttf);
 }
 
-body {
+#content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 15rem 24rem 1fr 10rem;
+  grid-template-rows: 10rem auto 1fr 5rem;
   padding: 1rem;
   justify-items: stretch;
-  background-color: whitesmoke;
+  background-color: black;
 }
 
-body > * {
-  border: 0.2rem solid black;
+#content > * {
   place-self: stretch;
   background-color: orange;
 }
@@ -580,6 +580,7 @@ header {
   display: grid;
   justify-items: center;
   align-items: center;
+  border: 0.2rem solid black;
 }
 
 nav {
@@ -608,6 +609,7 @@ main {
   justify-items: center;
   align-items: center;
   display: grid;
+  border: 0.2rem solid black;
 }
 
 main p {
@@ -621,12 +623,21 @@ footer {
   display: grid;
   justify-items: center;
   align-items: center;
+  border: 0.2rem solid black;
 }
 
 @media (min-width: 56rem) {
-  body {
+  #content {
     padding-left: calc((2rem + 100% - 56rem)/3);
     padding-right: calc((2rem + 100% - 56rem)/3);
+  }
+  nav {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  button {
+    padding-top: clamp(2rem, 5%, 3rem);
+    padding-bottom: clamp(2rem, 5%, 3rem);
   }
   main {
     height: 50rem;
@@ -637,5 +648,4 @@ footer {
     font-size: clamp(1.6rem, 2rem, 3rem);
     align-self: center;
   }
-
 }
