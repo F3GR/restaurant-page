@@ -1,4 +1,5 @@
 import { createElementWithAttributes } from './utils.js';
+import Photo from '../originals/pah-zaz.jpeg';
 
 export function renderFrame() {
     const restaurantName = 'PAH ZAZ';
@@ -39,5 +40,5 @@ export function renderAboutPage() {
     const paraTwo = createElementWithAttributes('p', { class: 'two' }, selectedMain);
     paraTwo.textContent = paraTwoText;
 
-    createElementWithAttributes('img', { class: 'restaurant-photo', src: '../src/originals/pah-zaz.jpeg', alt: `Restaurant's photo` }, selectedMain);
+    createElementWithAttributes('img', { src: Photo, alt: `restaurant-photo` }, selectedMain);
 }
